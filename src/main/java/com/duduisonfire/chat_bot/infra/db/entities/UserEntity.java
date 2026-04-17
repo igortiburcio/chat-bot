@@ -1,6 +1,6 @@
 package com.duduisonfire.chat_bot.infra.db.entities;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -28,7 +28,7 @@ public class UserEntity {
     private String password;
 
     @Column(columnDefinition = "DATE", name = "birth_date")
-    private Date birthDate;
+    private LocalDate birthDate;
 
     @Column(columnDefinition = "TEXT", name = "full_name")
     private String fullName;
